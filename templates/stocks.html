@@ -1,0 +1,30 @@
+<!-- <!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Stocks</title>
+  </head>
+  <body>
+    <h2>Stocks </h2>
+    <ul>
+        {% for stock in stocks %}
+        <li>{{ stock }}</li>
+        {% endfor %}
+    </ul>
+  </body>  
+</html> -->
+
+{% extends 'base.html' %}
+{% block title %}Stocks{% endblock %}
+{% block content %}
+<h2>Stocks</h2>
+    <ul>
+        {% for stock in stocks %}
+        <li>{{ stock }}</li>
+        {% endfor %}
+    </ul>
+<p>Welcome to the homepage!</p>
+{% endblock %}
+
+

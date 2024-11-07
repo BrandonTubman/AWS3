@@ -1,0 +1,39 @@
+<!-- <!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello2</title>
+  </head>
+<body>
+
+    {{ username }}
+    {% if username %}
+    <h1>Welcome, {{ username }}!</h1>
+    {% else %}
+    <h1>Welcome, Guest!</h1>
+    {% endif %}
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello2</title>
+  </head>
+<body>
+
+    <h1>List of Users</h1>
+    <ul>
+      {% for user in users %}
+        <li>{{ user.name }} ({{ user.email }})</li>
+      {% else %}
+        <li>No users found</li>
+      {% end for %}
+      </ul>
+</body>
+</html>
